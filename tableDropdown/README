@@ -8,7 +8,7 @@ don't want to clutter your toolbar, this is the plugin you've been searching for
 
 To use, follow these steps:
 
-1. Copy this plugin folder to tinymce/jscripts/tiny_mce/plugins/
+1. Copy the /tableDropdown/ plugin folder to tinymce/jscripts/tiny_mce/plugins/
 
 2. Add tableDropdown to your TinyMCE init: 
 
