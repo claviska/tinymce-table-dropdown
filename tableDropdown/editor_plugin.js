@@ -18,7 +18,7 @@
 	            case 'tableDropdown':
 	            	
 	                var c = cm.createSplitButton('tableDropdown', {
-	                    title : 'Table Options',
+	                    title : 'table.desc',
 	                    'class': 'mce_table',
 	                    onclick: function() {
 	                        tinymce.activeEditor.execCommand('mceInsertTable');
