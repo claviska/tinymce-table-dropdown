@@ -29,19 +29,14 @@
 	                    
 						m.add({
 							title: 'table.desc', 
-							'class': 'mce-insert-table', 
-							icon: 'table', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceInsertTable');
-							}
+							icon: 'table',
+							cmd: 'mceInsertTable'
 						});
 						
 						m.add({
 							title: 'table.del',
 							icon: 'delete_table',
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableDelete');
-							}
+							cmd: 'mceTableDelete'
 						}).setDisabled(1);
 						
 						m.addSeparator();
@@ -49,17 +44,13 @@
 						m.add({
 							title: 'table.row_desc', 
 							icon: 'row_props', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableRowProps');
-							}
+							cmd: 'mceTableRowProps'
 						}).setDisabled(1);
 						
 						m.add({
 							title: 'table.cell_desc', 
 							icon: 'cell_props', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableCellProps');
-							}
+							cmd: 'mceTableCellProps'
 						}).setDisabled(1);
 						
 						m.addSeparator();
@@ -67,25 +58,19 @@
 						m.add({
 							title: 'table.row_before_desc', 
 							icon: 'row_before', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableInsertRowBefore');
-							}
+							cmd: 'mceTableInsertRowBefore'
 						}).setDisabled(1);
 						
 						m.add({
 							title: 'table.row_after_desc', 
 							icon: 'row_after', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableInsertRowAfter');
-							}
+							cmd: 'mceTableInsertRowAfter'
 						}).setDisabled(1);
 						
 						m.add({
 							title: 'table.delete_row_desc', 
 							icon: 'delete_row', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableDeleteRow');
-							}
+							cmd: 'mceTableDeleteRow'
 						}).setDisabled(1);
 						
 						m.addSeparator();
@@ -93,25 +78,19 @@
 						m.add({
 							title: 'table.col_before_desc', 
 							icon: 'col_before', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableInsertColBefore');
-							}
+							cmd: 'mceTableInsertColBefore'
 						}).setDisabled(1);
 						
 						m.add({
 							title: 'table.col_after_desc', 
 							icon: 'col_after', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableInsertColAfter');
-							}
+							cmd: 'mceTableInsertColAfter'
 						}).setDisabled(1);
 						
 						m.add({
 							title: 'table.delete_col_desc', 
 							icon: 'delete_col', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableDeleteCol');
-							}
+							cmd: 'mceTableDeleteCol'
 						}).setDisabled(1);
 						
 						m.addSeparator();
@@ -119,17 +98,13 @@
 						m.add({
 							title: 'table.merge_cells_desc', 
 							icon: 'merge_cells', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableMergeCells');
-							}
+							cmd: 'mceTableMergeCells'
 						}).setDisabled(1);
 						
 						m.add({
 							title: 'table.split_cells_desc', 
 							icon: 'split_cells', 
-							onclick: function() {
-								tinymce.activeEditor.execCommand('mceTableSplitCells');
-							}
+							cmd: 'mceTableSplitCells'
 						}).setDisabled(1);
 						
 						// Enable/disable menu items on node change
