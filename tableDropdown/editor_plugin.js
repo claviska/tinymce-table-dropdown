@@ -37,7 +37,7 @@
 							title: 'table.del',
 							icon: 'delete_table',
 							cmd: 'mceTableDelete'
-						}).setDisabled(1);
+						});
 						
 						m.addSeparator();
 						
@@ -45,13 +45,13 @@
 							title: 'table.row_desc', 
 							icon: 'row_props', 
 							cmd: 'mceTableRowProps'
-						}).setDisabled(1);
+						});
 						
 						m.add({
 							title: 'table.cell_desc', 
 							icon: 'cell_props', 
 							cmd: 'mceTableCellProps'
-						}).setDisabled(1);
+						});
 						
 						m.addSeparator();
 						
@@ -59,19 +59,19 @@
 							title: 'table.row_before_desc', 
 							icon: 'row_before', 
 							cmd: 'mceTableInsertRowBefore'
-						}).setDisabled(1);
+						});
 						
 						m.add({
 							title: 'table.row_after_desc', 
 							icon: 'row_after', 
 							cmd: 'mceTableInsertRowAfter'
-						}).setDisabled(1);
+						});
 						
 						m.add({
 							title: 'table.delete_row_desc', 
 							icon: 'delete_row', 
 							cmd: 'mceTableDeleteRow'
-						}).setDisabled(1);
+						});
 						
 						m.addSeparator();
 						
@@ -79,19 +79,19 @@
 							title: 'table.col_before_desc', 
 							icon: 'col_before', 
 							cmd: 'mceTableInsertColBefore'
-						}).setDisabled(1);
+						});
 						
 						m.add({
 							title: 'table.col_after_desc', 
 							icon: 'col_after', 
 							cmd: 'mceTableInsertColAfter'
-						}).setDisabled(1);
+						});
 						
 						m.add({
 							title: 'table.delete_col_desc', 
 							icon: 'delete_col', 
 							cmd: 'mceTableDeleteCol'
-						}).setDisabled(1);
+						});
 						
 						m.addSeparator();
 						
@@ -99,13 +99,13 @@
 							title: 'table.merge_cells_desc', 
 							icon: 'merge_cells', 
 							cmd: 'mceTableMergeCells'
-						}).setDisabled(1);
+						});
 						
 						m.add({
 							title: 'table.split_cells_desc', 
 							icon: 'split_cells', 
 							cmd: 'mceTableSplitCells'
-						}).setDisabled(1);
+						});
 						
 						// Enable/disable menu items on node change
 						c.editor.onNodeChange.add( function(ed, cm, n, co) {
@@ -117,6 +117,12 @@
 								t.setDisabled(!p);
 							});
 						});
+						
+						// This really needs to be done with a callback, but there 
+						// doesn't seem to be one that works in the wiki
+						setTimeout( function() {
+							c.editor.nodeChanged();
+						}, 50);
 						
 					});
 	                
