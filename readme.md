@@ -19,14 +19,14 @@ https://www.abeautifulsite.net/tinymce-table-dropdown-plugin
 
 ## Usage
 
-1. Copy the `/tableDropdown/` plugin folder to `tinymce/jscripts/tiny_mce/plugins/`
-2. Add tableDropdown to your TinyMCE init:
-  ```js
-  tinyMCE.init({
-	  [...]
-      plugins: 'paste, fullscreen, [...], table, tableDropdown',
-	  theme_advanced_buttons1: "undo, redo, [...], tableDropdown",
-	  [...]
-  });
-  ```
-3. Enjoy your new table dropdown!
+- Copy the `/tableDropdown/` plugin folder to `tinymce/jscripts/tiny_mce/plugins/`
+- Add tableDropdown to your TinyMCE init:
+```js
+tinyMCE.init({
+  [...]
+  plugins: 'paste, fullscreen, [...], table, tableDropdown',
+  theme_advanced_buttons1: "undo, redo, [...], tableDropdown",
+  [...]
+});
+```
+- Enjoy your new table dropdown!
